@@ -1,0 +1,27 @@
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-picker__label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.date-picker__input {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.date-picker__input:focus {
+  border-color: var(--color-primary);
+}
