@@ -1,0 +1,20 @@
+{
+  "name": "calendar-event-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calendar Event Automation System – upload a timetable PDF, generate .ics",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start:server": "npm start --prefix server",
+    "lint": "eslint . --ext .js,.jsx --ignore-pattern node_modules --ignore-pattern dist",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2"
+  }
+}
