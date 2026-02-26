@@ -12,7 +12,7 @@ const fileFilter = (_req, file, cb) => {
     err.status = 400;
     return cb(err, false);
   }
-  cb(null, true);
+  return cb(null, true);
 };
 
 const upload = multer({

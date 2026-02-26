@@ -31,7 +31,8 @@ function buildIcs(events) {
   return new Promise((resolve, reject) => {
     ics.createEvents(icsEvents, (err, value) => {
       if (err) {
-        return reject(new Error('Failed to generate ICS file'));
+        reject(new Error('Failed to generate ICS file'));
+        return;
       }
       resolve(value);
     });
