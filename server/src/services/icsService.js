@@ -21,10 +21,11 @@ function toDateArray(date) {
  */
 function buildIcs(events) {
   const icsEvents = events.map((evt) => ({
-    title: evt.title,
+    title: evt.lecturer ? `${evt.title} – ${evt.lecturer}` : evt.title,
     start: toDateArray(evt.start),
     end: toDateArray(evt.end),
     location: evt.location || '',
+    description: evt.lecturer ? `Lecturer: ${evt.lecturer}` : '',
     status: 'CONFIRMED',
   }));
 

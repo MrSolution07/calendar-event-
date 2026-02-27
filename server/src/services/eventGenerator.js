@@ -61,6 +61,7 @@ function generateRecurringEvents(entry, startDate, endDate = DEFAULT_END_DATE) {
       start: eventStart,
       end: eventEnd,
       location: entry.location,
+      lecturer: entry.lecturer || '',
     });
 
     current.setDate(current.getDate() + 7);
